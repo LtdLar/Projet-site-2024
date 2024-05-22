@@ -16,19 +16,6 @@
 <li class="l2"><a href="faq.html" >F.A.Q </a></li>
 <li class="l3"><a href="contact.html">A propos de nous </a></li>
         
-<?php 
-$connection = mysql_connect("localhost","root","");
-
-mysql_select_db("blog1")or die(mysql_error());
-
-$safe_value = mysql_real_escape_string($_POST['search']);
-
-$result = mysql_query("SELECT username FROM member WHERE `username` LIKE %$safe_value%");
- while ($row = mysql_fetch_assoc($result)) {
-echo "<div id='link' onClick='addText(\"".$row['username']."\");'>" . $row['username'] . "</div>";  
- }
-?>
-        
 <li class="l4"><form role="search">
         <form action="users.php" method="GET">
             <input type="search" id="maRecherche" name="q" placeholder="Rechercher sur le site…" aria-label="Rechercher parmi le contenu du site" />

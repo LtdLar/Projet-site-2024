@@ -281,3 +281,15 @@ option {
 .submit:active {
     background-color: #06b;
 }
+
+.comment{
+    display: block;
+	text-align: left;
+	font-family: Comic Sans,cursive;
+	font-size: 130%;
+	background-color: #FFF;
+	border-radius: 1rem;
+	padding: 5px;
+	margin-bottom: 5px;
+	flex-basis: calc(33.333% - 50px);
+}

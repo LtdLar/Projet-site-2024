@@ -22,7 +22,7 @@ if(isset($_POST['submit'])){
     fputcsv($file,$output);
 	
 	fclose($file);
-	header("Location:envoi.html");
+	header("Location: /envoi.html");
 		
 
 }

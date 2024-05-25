@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+</head>
+<body>
+    <div>
+        <h3>Barre de recherche:</h3>
+        <div>
+            <br /><br />
+            <form method="POST" action="index.html">
+                <div>
+                    <input type="text" name="searchvalue">
+                    <button type=submit name="submit">Rechercher</button>
+                <?php
+                include "search.php";
+                get_target_in_csv($searchvalue);
+                ?>
+                </div>
+            </form>
+            <br />
+            </div>
+        </div>
+    </div>
+    <h3>Ajouter un tutoriel</h3>
+    <a href="get_new_post.html">Ajouter</a>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <div id="form_modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div>
+            <form action="save_content.php" method="POST" enctype="multipart/form-data">
+                <div>
+                    <div>
+                        <div>
+                            <label>Titre :</label>
+                            <input type="text" name="Post_title" required="required"/>
+                        </div>
+                        <br>
+                        <div>
+                            <label>Nom d'utilisateur:</label>
+                            <input type="text" name="Poster_Username" required="required"/>
+                        </div>
+                        <br>
+                        <div>
+                            <label>Contenu :</label>
+                            <textarea style="resize:none; height:250px;" name="Content" required="required"></textarea>
+                        </div>
+                        <br> 
+                         <div>
+                            <label>Sélectionnez une catégorie:</label>
+                            <select name="category" required="required">
+                                <option value="ashion and beauty">Mode et beauté</option>
+                                <option value="food and cooking">Nourriture et cuisine</option>
+                                <option value="manga and anime">Manga et animé</option>
+                                <option value="manhwa Webtoon and fanfiction">Manhwa, Webtoon et fanfiction</option>
+                            </select>
+                        </div>
+                        <br>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <div>
+                        <button type="reset" name="reset">Réinitialiser</button>
+                        <button type="submit" name="save">Sauvegarder</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

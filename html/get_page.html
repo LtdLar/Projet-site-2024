@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width"/>
+</head>
+<body>
+    <nav>
+    </nav>
+    <div>
+    </div>
+    <div>
+        <hr/>
+        <a href="index.html">Retour</a>
+        <?php
+            require 'search.php';
+            if(isset($_REQUEST['id'])){
+                $search_id = $_REQUEST['id'];
+                $stmt = $conn->prepare("SELECT * FROM `Projet-site-2024-main\Database.csv'` WHERE `Post_title` = ?");
+                $stmt->bind_param("s", $search_id);
+                $stmt->execute();
+                $result = $stmt->get_result();
+                if($fetch = $result->fetch_assoc()){
+        ?>
+                <h3><?php echo $fetch['Post_Title']?></h3>
+                <p><?php echo nl2br($fetch['content'])?></p>        
+    </div>
+</body> 
+</html>

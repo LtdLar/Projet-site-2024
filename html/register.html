@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+</head>
+<body>
+<form action="register.php" method="POST" enctype="multipart/form-data">
+<label>E-mail:</label>
+<input type="email" name="E-mail">
+<br>
+<br>
+<label>Mot de passe :</label>
+<input type=password name="Password">
+<br>
+<br>
+<label>Nom d'utilisateur:</label>
+<input type="text" name="Username">
+<br>
+<br>
+<label>Hobby:</label>
+                            <select name="Hobby" required="required" multiple="multiple">
+                                <option value="ashion and beauty">Mode et beauté</option>
+                                <option value="food and cooking">Nourriture et cuisine</option>
+                                <option value="manga and anime">Manga et animé</option>
+                                <option value="manhwa Webtoon and fanfiction">Manhwa, Webtoon et fanfiction</option>
+                            </select>
+                            <br>
+                            <br>
+                            <button type="reset" name="reset">Réinitialiser</button>
+                            <button type="submit" name="send">Envoyer</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+</head>
+<body>
+<form action="login.php" method="POST" enctype="multipart/form-data">
+<label>E-mail:</label>
+<input type="email" placeholder="Entrez votre adresse mail" name="E-mail">
+<br>
+<br>
+<label>Mot de passe :</label>
+<input type=password placeholder="Entrez votre mot de passe" name="Password">
+<br>
+<br>
+<button type="reset" name="reset">Réinitialiser</button>
+<button type="submit" name="send">Envoyer</button>
+<php?
+
+include("login.php");
+
+//affiche un message de bienvenue si l'utilisateur existe dans la base de donnée
+if (get_target_in_csv($Userlist.csv, $E-mail, $password)=true){
+    echo "Bienvenue! Retournez sur la page d'accueil pour poursuivre votre visite.";
+}
+
+?>
+</form>
+</body>
+</html>

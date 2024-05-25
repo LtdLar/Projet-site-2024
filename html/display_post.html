@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xml:lang="fr" lang="fr"> 
+<head>
+</head>
+<body>
+    <h3>Laissez un commentaire:</h3>
+    <form action="save_comment.php" method="POST" enctype="multipart/form-data">
+    <div>
+        <label>Nom d'utilisateur :</label>
+        <input type="text" name="Commentary_username" required="required"/>
+    </div>
+    <br>
+    <div
+        <label>Notation de 1 à 5 étoiles :</label>
+        <input type ="number" min="1" max="5" value="5" step="1" maxlength="1" name="Stars" required="required"></textarea>
+    </div>
+    <br>
+    <div>
+        <label>Commentaire :</label>
+        <textarea style="resize:none; height:250px;" name="Commentary" required="required">Commentaire</textarea>
+    </div>
+    <br>
+    <button type="reset" name="reset">Réinitialiser</button>
+    <button type="submit" name="save">Sauvegarder</button>
+    </form>
+</body>
+</html>

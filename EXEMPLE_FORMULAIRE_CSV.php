@@ -2,14 +2,14 @@
 <?php
 if(isset($_POST['submit'])){
 	$nom= filter_input(INPUT_POST, "nom");
-    $prenom = filter_input(INPUT_POST, "prenom");
-    $sujet = filter_input(INPUT_POST, "sujet");
+    $prenom = filter_input(INPUT_POST, "url");
+    $sujet = filter_input(INPUT_POST, "textarea");
     $email = filter_input(INPUT_POST, "email");
 	
 	$output= array(
 		'nom' => $nom,
-		'prenom' => $prenom,
-		'sujet' => $sujet,
+		'prenom' => $url,
+		'sujet' => $textarea,
 		'email' => $email,
 	);
 		
@@ -22,7 +22,7 @@ if(isset($_POST['submit'])){
     fputcsv($file,$output);
 	
 	fclose($file);
-	
+	header("Location:envoi.html");
 		
 
 }

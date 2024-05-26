@@ -4,12 +4,13 @@ Ceci est le site demandé suite au projet d'informatique 4.
 
 Comment l'utiliser ?
 
-- Télecharger le fichier **"Conseils & Cie.zip"**
+- Télechargez le fichier **"Conseils & Cie.zip"**
+- Mettez les fichers extraits dans votre **WampServer**
 - Exécutez le fichier **"accueil2.html"**
 - Amusez-vous et découvrez de nombreux conseils et astuces !
 
 
 
-Bug remarqués: -la partie php n'est pas entièrement fiable
+Bug remarqués: La barre de recherche ne fonctionne pas
 
 
